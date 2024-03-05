@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, rgb(0, 132, 255), rgb(0, 3, 158));
+    margin: 0;
+    /* Remova margens padrão do body */
+    display: flex;
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    align-items: center;
+    /* Centralizar verticalmente */
+    height: 100vh;
+    /* Garantir que o formulário ocupe a altura total da tela */
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.img {
+    text-align: center;
+    height: 400px;
+    max-width: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    /* Ajuste a largura do formulário conforme desejado */
+    max-width: 500px;
+    /* Limita a largura máxima do formulário */
+}
+
+@media screen and (max-width: 428px) {
+    .box {
+        width: 95%;
+        /* Redimensiona o formulário para telas menores */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .box {
+padding: 15px; /* Reduz o preenchimento do formulário para telas ainda menores */
+    }
+
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+    /* Espaçamento entre os campos de entrada */
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    /* Ocupar toda a largura do pai */
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: dodgerblue;
+    /* Mudei a cor da label quando o campo está preenchido */
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 12px;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Limitações */
+textarea,
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"] {
+        width: 100%;
+        box-sizing: border-box;
+        /* Adiciona preenchimento e borda ao tamanho total */
+}
+
+/*Observações*/
+#obs {
+    width: 100%;
+    /* Ocupar toda a largura do pai */
+    resize: vertical;
+
+}
+
+.peso {
+    width: 100%;
+    /* Ocupar toda a largura do pai */
+    resize: vertical;
+}
+
+.bracos {
+    width: 100%;
+    /* Ocupar toda a largura do pai */
+    resize: vertical;
+}
+
+#submit {
+    width: 100%;
+    /* Botão de largura total */
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: rgb(0, 102, 204);
+}
+
+.smallTextInput {
+    width: 150px;
+    /* Defina o tamanho desejado */
+    height: 100px;
+    /* Defina a altura desejada */
+    overflow-y: auto;
+    /* Permite a rolagem vertical quando necessário */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    line-height: 100px;
+    /* Centraliza o texto verticalmente */
+    font-family: Arial, sans-serif;
+    /* Define a fonte do texto */
+    font-size: 14px;
+    /* Define o tamanho da fonte */
+    color: #333;
+    /* Define a cor do texto */
+    border: 1px solid #ccc;
+    /* Adiciona uma borda */
+    padding: 5px;
+    /* Adiciona espaçamento interno */
+
+    /* Formatação do texto */
+    font-weight: bold;
+    /* Define a espessura da fonte como negrito */
+    font-style: italic;
+    /* Define o estilo da fonte como itálico */
+    text-transform: uppercase;
+    /* Converte o texto em maiúsculas */
+    letter-spacing: 2px;
+    /* Define o espaçamento entre letras */
+    word-spacing: 5px;
+    /* Define o espaçamento entre palavras */
+}
